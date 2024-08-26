@@ -6,23 +6,24 @@
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    
 }
 
 main{
     width: 75%;
     margin: 50px auto;
-    border: 1px solid red;
+    border: 1px solid rgb(0, 0, 0);
     display: grid;
     grid-template-rows: 60px 100px 200px 60px;
     /* grid-template-columns: repeat(3,1fr) 150px; */
     grid-template-columns: 1fr 1fr 1fr 150px;
-    
+    grid-gap: 10px;
 }
 
 .header{
     background-color: #FF475A ;
-    /* grid-column: 1/-1; */
-    grid-row: 1/-2;
+    grid-column: 1/-1; 
+    
 }
 .box1{
     background-color:#30D476 ;
@@ -35,10 +36,14 @@ main{
 }
 .sidebar{
     background-color:#2F3442 ;
+    grid-row: 2/4  ;
+    grid-column: 4/5;
 }
 .maincontent{
     background-color:#FFA506 ;
+    grid-column: 1/4;
 }
 .footer{
     background-color: #05A9AF;
+    grid-column: 1/-1;
 }
